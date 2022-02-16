@@ -4,6 +4,8 @@ Prof. Thiago G. Traue
 
 thiago.traue@uni9.pro.br
 
+Classroom da disciplina: [NESTE LINK](https://classroom.google.com/c/NDY1OTg2MzM1MzU1?cjc=ymtuqf7)
+
 ---
 
 ## Preparação do ambiente de desenvolvimento
@@ -13,9 +15,10 @@ A preparação do ambiente de desenvolvimento é bastante simples, mas requer mu
 Para preparar o ambiente de desenvolvimento, o professor, junto com a turma, montou um documento disponível [NESTE LINK](https://docs.google.com/document/d/1hiHuZm_bghn95xhtBBpJNTOiINMZrdsZNfVft5JIksQ/edit?usp=sharing)
 
 
+
 ## Atividades
 
-Essa disciplina ainda não demanda atividades.
+Todas as atividades dessa disciplina serão passadas via classroom. Fique atento(a).
 
 
 
