@@ -18,7 +18,7 @@ Para preparar o ambiente de desenvolvimento, o professor, junto com a turma, mon
 
 ## Atividades
 
-Todas as atividades dessa disciplina serão passadas via classroom. Fique atento(a).
+Todas as atividades dessa disciplina serão passadas via classroom. Fique atento(a). 
 
 
 
