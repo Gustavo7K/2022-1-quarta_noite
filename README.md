@@ -14,17 +14,17 @@ A preparação do ambiente de desenvolvimento é bastante simples, mas requer mu
 
 Para preparar o ambiente de desenvolvimento, o professor, junto com a turma, montou um documento disponível [NESTE LINK](https://docs.google.com/document/d/1hiHuZm_bghn95xhtBBpJNTOiINMZrdsZNfVft5JIksQ/edit?usp=sharing)
 
-
-
 ## Atividades
 
-Todas as atividades dessa disciplina serão passadas via classroom. Fique atento(a). 
+Todas as atividades dessa disciplina serão passadas via classroom. Fique atento(a).
 
+As atividades da disciplina são:
 
+- Atividade 1: De 30.03 até 04.05, 19.30h - Em andamento
 
 ## Critérios de Avaliação
 
-Este professor não utiliza nenhuma prova para realizar a avaliação da turma, apenas atividades disponibilizadas durante o semestre. 
+Este professor não utiliza nenhuma prova para realizar a avaliação da turma, apenas atividades disponibilizadas durante o semestre.
 
 Teremos entre 4 e 6 atividades, todas de múltipla escolha e com prazo de ao menos 15 dias para realização.
 
