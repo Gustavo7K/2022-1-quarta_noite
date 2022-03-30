@@ -4,7 +4,7 @@ Prof. Thiago G. Traue
 
 thiago.traue@uni9.pro.br
 
-Classroom da disciplina: [NESTE LINK](https://classroom.google.com/c/NDY1OTg2MzM1MzU1?cjc=ymtuqf7)
+CLASSROOM DA DISCIPLIN: [NESTE LINK](https://classroom.google.com/c/NDY1OTg2MzM1MzU1?cjc=ymtuqf7)
 
 ---
 
