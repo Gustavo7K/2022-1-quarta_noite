@@ -4,7 +4,7 @@ Prof. Thiago G. Traue
 
 thiago.traue@uni9.pro.br
 
-CLASSROOM DA DISCIPLIN: [NESTE LINK](https://classroom.google.com/c/NDY1OTg2MzM1MzU1?cjc=ymtuqf7)
+CLASSROOM DA DISCIPLINA: [NESTE LINK](https://classroom.google.com/c/NDY1OTg2MzM1MzU1?cjc=ymtuqf7)
 
 ---
 
@@ -20,7 +20,7 @@ Todas as atividades dessa disciplina serão passadas via classroom. Fique atento
 
 As atividades da disciplina são:
 
-- Atividade 1: De 30.03 até 04.05, 19.30h - Em andamento
+- **Atividade 1**: De 30.03 até 04.05, 19.30h - Em andamento
 
 ## Critérios de Avaliação
 
