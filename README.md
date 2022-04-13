@@ -21,6 +21,7 @@ Todas as atividades dessa disciplina serão passadas via classroom. Fique atento
 As atividades da disciplina são:
 
 - **Atividade 1**: De 30.03 até 04.05, 19.30h - Em andamento
+- **Atividade 2**: De 13.04 até 11.05, 19.30h - Em andamento
 
 ## Critérios de Avaliação
 
