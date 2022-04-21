@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:dropdown_search/dropdown_search.dart';
 
 class Home extends StatefulWidget {
   const Home({ Key? key }) : super(key: key);
@@ -10,8 +11,21 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("UniClima"),
+        centerTitle: true,
+      ),
+      body: Center(
+        child: Column(
+          children: [
+            DropdownSearch<String>(
+              mode: Mode.MENU,
+              //paramos aqui... :(
+            )
+          ],
+        ),
+      ),
     );
   }
 }
