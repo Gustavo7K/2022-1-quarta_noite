@@ -1,16 +1,21 @@
+import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:dropdown_search/dropdown_search.dart';
-  import 'package:http/http.dart' as http;
+import 'package:http/http.dart' as http;
+import 'package:uni_clima/model/clima_model.dart';
+import 'package:uni_clima/widgets/clima_widget.dart';
 
 class Home extends StatefulWidget {
-  const Home({ Key? key }) : super(key: key);
+  const Home({Key? key}) : super(key: key);
 
   @override
   State<Home> createState() => _HomeState();
 }
 
 class _HomeState extends State<Home> {
-  
+  late ClimaModel climaModel;
+  bool _isLoading = false;
+
   final List<String> _cidades = [
     "Aracaju",
     "Belém",
@@ -18,7 +23,7 @@ class _HomeState extends State<Home> {
     "Boa Vista",
     "Brasilia",
     "Campo Grande",
-    "Cuiaba", 
+    "Cuiaba",
     "Curitiba",
     "Florianópolis",
     "Fortaleza",
@@ -43,8 +48,11 @@ class _HomeState extends State<Home> {
 
   String _cidadeSelecionada = "São Paulo";
 
-
   carregaClima() async {
+    setState(() {
+      _isLoading = true;
+    });
+
     //variáveis auxiliares para montagem da URL de requisição
     const String _apiURL = "api.openweathermap.org";
     const String _path = "/data/2.5/weather";
@@ -61,19 +69,21 @@ class _HomeState extends State<Home> {
     };
 
     //requisição à API...
-    final climaResponse = 
-      await http.get(Uri.https(_apiURL, _path, _parms));
+    final climaResponse = await http.get(Uri.https(_apiURL, _path, _parms));
 
     //apenas para depuração...
     print("URL Montada: " + climaResponse.request!.url.toString());
 
-    //paramos aqui.... :(
+    if (climaResponse.statusCode == 200) {
+      setState(() {
+        climaModel = ClimaModel.fromJson(jsonDecode(climaResponse.body));
+        _isLoading = false;
+      });
+    }
   }
 
-  
   @override
   Widget build(BuildContext context) {
-
     double height = MediaQuery.of(context).size.height;
 
     return Scaffold(
@@ -93,9 +103,31 @@ class _HomeState extends State<Home> {
               onChanged: (value) {
                 setState(() {
                   _cidadeSelecionada = value!;
+                  carregaClima();
                 });
               },
-            )
+            ),
+            Expanded(
+                child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.all(6),
+                  child: _isLoading
+                      ? const CircularProgressIndicator(
+                          strokeWidth: 4,
+                          valueColor: AlwaysStoppedAnimation(Colors.blue),
+                        )
+                      : climaModel != null
+                          ? ClimaWidget(climaData: climaModel)
+                          : Text(
+                              "Sem dados para exibir!",
+                              style: Theme.of(context).textTheme.headline4,
+                            ),
+                ),
+                //paramos aqui
+              ],
+            ))
           ],
         ),
       ),
