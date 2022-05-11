@@ -23,6 +23,7 @@ As atividades da disciplina são:
 - **Atividade 1**: De 30.03 até 04.05, 19.30h - Encerrada
 - **Atividade 2**: De 13.04 até 11.05, 19.30h - Encerrada
 - **Atividade 3**: De 04.05 até 01.06, 19.30h - Em andamento
+- **Atividade 4**: De 04.05 até 08.06, 19.30h - Em andamento
 
 ## Critérios de Avaliação
 
