@@ -16,6 +16,12 @@ class _HomeState extends State<Home> {
   late ClimaModel climaModel;
   bool _isLoading = false;
 
+  @override
+  void initState() {
+    super.initState();
+    carregaClima();
+  }
+
   final List<String> _cidades = [
     "Aracaju",
     "Belém",
@@ -103,8 +109,8 @@ class _HomeState extends State<Home> {
               onChanged: (value) {
                 setState(() {
                   _cidadeSelecionada = value!;
-                  carregaClima();
                 });
+                carregaClima();
               },
             ),
             Expanded(
@@ -125,7 +131,20 @@ class _HomeState extends State<Home> {
                               style: Theme.of(context).textTheme.headline4,
                             ),
                 ),
-                //paramos aqui
+                Padding(
+                    padding: const EdgeInsets.all(8),
+                    child: _isLoading
+                        ? Text(
+                            "Carregando...",
+                            style: Theme.of(context).textTheme.headline4,
+                          )
+                        : IconButton(
+                            onPressed: carregaClima,
+                            icon: const Icon(Icons.refresh),
+                            iconSize: 50,
+                            color: Colors.blue,
+                            tooltip: "Recarregar clima",
+                          ))
               ],
             ))
           ],
