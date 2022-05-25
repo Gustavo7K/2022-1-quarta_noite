@@ -18,6 +18,8 @@ flutter pub get
 
 Este comando, atualiza as dependências de pacotes do projeto, que estão no arquivo pubspec.yaml
 
+Se der algum erro, especialmente de versionamento, veja [este link](https://stackoverflow.com/questions/64471983/pub-get-failed-1-because-note-requires-sdk-version-1-18-0-6-0-pre-2-0-0-ve) de como resolver ou busque o código do erro completo que certamente você encontrará a solução. :D
+
 ## Preparação do ambiente de desenvolvimento
 
 A preparação do ambiente de desenvolvimento é bastante simples, mas requer muita atenção
