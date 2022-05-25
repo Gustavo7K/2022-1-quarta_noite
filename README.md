@@ -8,6 +8,16 @@ CLASSROOM DA DISCIPLINA: [NESTE LINK](https://classroom.google.com/c/NDY1OTg2MzM
 
 ---
 
+## Sobre os projetos deste repositório
+
+Se você realizar o downlaod de algum projeto dete repositório, não deix de executar o comando abaixo na raiz da pasta do projeto em questão a ser utilizado.
+
+```
+flutter pub get
+```
+
+Este comando, atualiza as dependências de pacotes do projeto, que estão no arquivo pubspec.yaml
+
 ## Preparação do ambiente de desenvolvimento
 
 A preparação do ambiente de desenvolvimento é bastante simples, mas requer muita atenção
