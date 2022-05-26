@@ -50,8 +50,9 @@ class _HomeState extends State<Home> {
       novoTodo["titulo"] = _todoController.text;
       novoTodo["realizado"] = false;
       _todoList.add(novoTodo);
+      _todoController.text = "";
       _salvarDados();
-    });
+    }); 
   }
 
   Future<void> _reordenaLista() async {
@@ -86,7 +87,7 @@ class _HomeState extends State<Home> {
             )),
         onChanged: (value) {
           setState(() {
-            _todoList[index]["realizado"] = true;
+            _todoList[index]["realizado"] = value;
             _salvarDados();
           });
         },
